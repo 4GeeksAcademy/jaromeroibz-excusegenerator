@@ -21,11 +21,15 @@ let randomAction = Math.floor(Math.random() * action.length);
 let randomWhat = Math.floor(Math.random() * what.length);
 let randomWhen = Math.floor(Math.random() * when.length);
 
-let text = (document.getElementById("excuse").innerHTML =
-  who[randomWho] +
-  " " +
-  action[randomAction] +
-  " " +
-  what[randomWhat] +
-  " " +
-  when[randomWhen]);
+function randomexcuse() {
+  return (document.getElementById("excuse").innerHTML =
+    who[randomWho] +
+    " " +
+    action[randomAction] +
+    " " +
+    what[randomWhat] +
+    " " +
+    when[randomWhen]);
+}
+
+randomexcuse();
